@@ -20,7 +20,7 @@ locals {
 terraform {
   backend "s3" {
     bucket         = "reinvent2023-boa203"             # Hardcoded until Terraform starts supporting 
-    key            = "terraform.state"                 # variables in backend config block
+    key            = "terraform.key"                 # variables in backend config block
     dynamodb_table = "reinvent2023-boa203-db"          # see: https://github.com/hashicorp/terraform/issues/13022
     region         = "eu-west-1"                       #
     encrypt        = true
