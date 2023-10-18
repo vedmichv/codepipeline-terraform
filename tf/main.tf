@@ -9,7 +9,7 @@ data "aws_ami" "amazon-linux-2" {
 }
 
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "iivaniuk.createdbytf"
+  bucket_prefix = "vedmich.createdbytf."
 }
 
 resource "aws_s3_bucket_ownership_controls" "mybucket_owncontrol" {
